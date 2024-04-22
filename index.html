@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="nav">
-        <h1>Welcome to the library</h1>
-        <button id="add" onclick="showForm()">Add book</button>
-        <button id="refresh">Refresh</button>
+    <div class="container">
+        <header>
+            <h1>Welcome to the library</h1>
+        </header>
+        <main>
+            <p>Your Books&nbsp;<button class="add">+ Add Book</button></p>
+        </main>
+        <dialog>
+            <form>
+                <div class="method">
+                    <button autofocus class="close">X</button>
+                    <button class="ok">Submit</button>
+                </div>
+                <label>Title: <input type="text" id="title" placeholder="Title" autocomplete="off" minlength="1" required></label>
+                <label>Author: <input type="text" id="author" placeholder="Author" autocomplete="off" minlength="1" required></label>
+                <label>Number of Pages: <input type="number" min="1" step="1" id="pages" placeholder="0" required></label>
+            </form>
+        </dialog>
     </div>
-    <div class="book-list"></div>
-
-    <form action="post">
-        <h2>New book</h2>
-
-        <input type="text" id="name" placeholder="Name">
-
-        <input type="text" id="author" placeholder="Author">
-
-        <input type="number" id="pages" placeholder="Pages">
-
-        <button id="submit">Submit</button>
-    </form>
 </body>
 </html>
