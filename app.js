@@ -17,8 +17,10 @@ closeModal.addEventListener("click", (e) => {
 const getTitle = document.querySelector("#title");
 const getAuthor = document.querySelector("#author");
 const getPages = document.querySelector("#pages");
-const getStatus = document.querySelector("#status");
 const submitData = document.querySelector("form");
+
+
+
 
 let myLibrary = [];
 
@@ -93,3 +95,8 @@ submitData.addEventListener('submit', (e) => {
   dialog.close();
   submitData.reset();
 })
+
+
+
+
+

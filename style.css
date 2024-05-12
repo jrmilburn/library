@@ -163,6 +163,14 @@ dialog > form > label > input:focus {
     outline: none;
 }
 
+dialog > form > label > input:invalid {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+dialog > form > label > input:valid {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
 dialog > form > label > input[type="text"], [type="number"] {
     padding: 5px;
     width: 100%;
